@@ -47,7 +47,7 @@ def create_github_repo(repo_name):
         
         g = Github(GITHUB_TOKEN)
         user = g.get_user()
-        
+    
         # Create a private GitHub repository
         repo = user.create_repo(repo_name, private=True)
         print(f"Repository '{repo_name}' created successfully.")
